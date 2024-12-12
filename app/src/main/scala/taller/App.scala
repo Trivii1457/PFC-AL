@@ -29,7 +29,27 @@ object App {
     val comp = c.complemento(c.muchoMayorQue(3, 10))(8)
     println(comp) 
 
+    println("----------------------------"*5)
+    val matriz = new Taller3()
+
+    val m1 = matriz.matrizAlAzar(4, 10)
+    val m2 = matriz.matrizAlAzar(4, 10)
+    val m3 = matriz.resMatriz(m1, m2)
+    val m4 = matriz.resMatriz(m1, m2)
+    val m5 = matriz.multStrassen(m1, m2)
+    val m6 = matriz.multMatriz(m1, m2)
+    println(m1)
+    println(m2)
+    println(m3)
+    println(m4)
+    println(m5)
+    println(m6)
+
     
+  }
+
+  def Benchmark(): Unit = {
+    println("Benchmark")
   }
 
   def greeting(): String = "Hello, world!"
